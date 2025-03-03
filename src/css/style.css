@@ -61,6 +61,11 @@ section {
   border-radius: 10px;
 }
 
+.image-container img {
+  border-radius: 5px;
+  width: 450px;
+}
+
 .card-body .btn-outline-info {
   border-color: #fff;
   border-radius: 50%;
