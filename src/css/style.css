@@ -1,0 +1,309 @@
+body {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  overflow-x: hidden
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #fff;
+}
+
+.nav-link {
+  color: #303841;
+}
+
+.nav-link:hover {
+  color: #00adb5;
+  transition: all 1s ease-in-out;
+}
+
+.bold {
+  color: #00adb5;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+li::marker{
+  color:#ff5722;
+}
+
+section {
+  background-color: #fff;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+#aboutMe .container {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.image-container {
+  border: 5px solid #00adb5;
+  border-radius: 10px;
+}
+
+.image-container img {
+  border-radius: 5px;
+  width: 450px;
+}
+
+.card-body .btn-outline-info {
+  border-color: #fff;
+  border-radius: 50%;
+  color: #00adb5;
+  float: right;
+}
+
+.card-body .btn-outline-info:hover {
+  background-color: #00adb5;
+  border-color: #00adb5;
+  color: #fff;
+}
+
+#experience {
+  background-color: #303841;
+  color: #fff;
+}
+
+.wrapper {
+  margin: 50px auto;
+  max-width: 1080px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.wrapper .center-line {
+  background-color: #fff;
+  border-radius: 50px;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 10px;
+}
+
+.wrapper .row {
+  display: flex;
+}
+
+.row-left {
+  justify-content: flex-start;
+}
+
+.row-right {
+  justify-content: flex-end;
+}
+
+.wrapper .row .card {
+  background: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  width: calc(50% - 40px);
+}
+
+.wrapper .row .card::before {
+  background-color: #fff;
+  content: "";
+  height: 15px;
+  position: absolute;
+  top: 28px;
+  transform: rotate(45deg);
+  width: 15px;
+  z-index: 1;
+}
+
+.row-left .card::before {
+  right: -7px;
+}
+
+.row-right .card::before {
+  left: -7px;
+}
+
+.row .card .icon , .center-line .scroll-icon{
+  background: #fff;
+  border-radius: 50%;
+  color: #ff5722;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  width: 40px;
+}
+
+.center-line .scroll-icon{
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+
+.row-left .card .icon {
+  right: -60px;
+  top: 15px;
+}
+
+.row-right .card .icon {
+  left: -60px;
+  top: 15px;
+}
+
+.icon-skill img {
+  width: 100px;
+}
+
+.skills-grid {
+  align-items: center;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-items: center;
+}
+
+.icon-skill {
+  text-align: center;
+}
+
+.icon-skill span {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.project-card {
+  height: 700px;
+}
+
+.project-card img {
+  margin: 0 auto;
+  max-height: 255px;
+  text-align: center;
+}
+
+#contact {
+  background-color: #EEEEEE;
+}
+
+#aboutMe a, #contact a {
+  color: #303841;
+}
+
+#aboutMe a:hover, #contact a:hover {
+  color: #303841;
+  color: #00adb5;
+  transition: all 1s ease-in-out;
+}
+
+#contact .container {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+#contact .container div {
+  margin: 20px;
+}
+
+.image-contact {
+  width: 500px;
+}
+
+.social-networks ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-medias a {
+  color: #fff;
+}
+
+.social-medias a:hover {
+  color: #00adb5;
+  transition: all 1s ease-in-out;
+}
+
+.footer-top {
+  height: 15px;
+  background-color: #00adb5;
+}
+.footer-middle {
+  align-items: center;
+  background-color: #303841;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 50px;
+}
+
+.footer-bottom {
+  background-color: #ff5722;
+  height: 30px;
+}
+
+@media (max-width: 992px) {
+  #aboutMe .container,
+  #contact .container,
+  .footer-middle {
+    align-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper .center-line {
+    left: 40px;
+  }
+
+  .wrapper .row {
+    margin: 30px 0 3px 60px;
+  }
+
+  .wrapper .row .card {
+    width: 100%;
+  }
+
+  .row-left .card::before {
+    left: -7px;
+  }
+
+  .row-left .card .icon {
+    left: -60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper .center-line,
+  .row .card::before,
+  .row .card .icon {
+    display: none;
+  }
+
+  .wrapper .row {
+    margin: 10px 0;
+  }
+}
